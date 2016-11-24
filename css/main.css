@@ -9,8 +9,16 @@ hta howa mazian
 				$fonts
 \********************************************/
 @font-face {
-  font-family: myFirstFont;
+  font-family: proximabold;
   src: url(../fonts/proxima/ProximaNova-Bold-webfont.woff); }
+
+@font-face {
+  font-family: proximareg;
+  src: url(../fonts/proxima/ProximaNova-Reg-webfont.woff); }
+
+@font-face {
+  font-family: proximasembold;
+  src: url(../fonts/proxima/ProximaNova-Sbold-webfont.woff); }
 
 /* line 1, ../scss/base/_base.scss */
 ::selection {
@@ -37,7 +45,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #FFF;
-  font-family: "PT Sans,Helvetica,sans-serif";
+  font-family: "PT Sans", "Kreon,Helvetica,sans-serif";
   background-color: #fafafa; }
 
 /* line 21, ../scss/base/_base.scss */
@@ -78,18 +86,18 @@ textarea {
 
 /* line 54, ../scss/base/_base.scss */
 p {
-  font-family: "PT Sans,Helvetica,sans-serif";
+  font-family: "PT Sans", "Kreon,Helvetica,sans-serif";
   margin: 0;
   padding: 0; }
 
 /* line 60, ../scss/base/_base.scss */
 h1, h2, h3, h5, h6 {
-  font-family: myFirstFont; }
+  font-family: "Kreon,Helvetica,sans-serif"; }
 
 /* line 63, ../scss/base/_base.scss */
 textarea {
   font-size: 12px;
-  font-family: "PT Sans,Helvetica,sans-serif"; }
+  font-family: "PT Sans", "Kreon,Helvetica,sans-serif"; }
 
 /* line 13, ../scss/base/_reset.scss */
 html, body, div, span, applet, object, iframe,
@@ -153,7 +161,7 @@ h1, h2, h3, h4, h5 {
     text-align: center;
     font-size: 30px;
     font-weight: 700;
-    font-family: myFirstFont;
+    font-family: "Kreon,Helvetica,sans-serif";
     margin-bottom: 30px; }
     /* line 6, ../scss/layouts/_home.scss */
     .div01 h2 span:first-child {
@@ -165,7 +173,7 @@ h1, h2, h3, h4, h5 {
   .div01 p {
     margin: 0px 60px;
     text-align: center;
-    font-family: "PT Sans,Helvetica,sans-serif";
+    font-family: "PT Sans", "Kreon,Helvetica,sans-serif";
     color: #7a7a7a;
     font-size: 18px;
     line-height: 22px; }
@@ -295,7 +303,7 @@ h1, h2, h3, h4, h5 {
         font-size: 18px;
         font-weight: bold;
         text-align: center;
-        font-family: myFirstFont; }
+        font-family: "Kreon,Helvetica,sans-serif"; }
         /* line 81, ../scss/modules/_header.scss */
         .firstWrap .bottom .text h1 span {
           color: #a1e0fb; }
@@ -326,7 +334,7 @@ h1, h2, h3, h4, h5 {
 /* line 11, ../scss/modules/_navbar.scss */
 .ourNavbar ul.navbar-nav li a {
   font-size: 14px;
-  font-family: "PT Sans,Helvetica,sans-serif";
+  font-family: "PT Sans", "Kreon,Helvetica,sans-serif";
   text-align: center;
   font-weight: 700;
   padding: 19px 0;
