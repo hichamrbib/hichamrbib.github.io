@@ -2,7 +2,7 @@ $(document).ready(function(){
 	$height = $(window).height();
 	if ($(window).width() >= 768 && $height >= 662) 
 	{
-		$height = $height - $height/3;
+		$height = $height - $height/4;
 	}
 
 	$(".firstWrap").css('height', $height + 'px');

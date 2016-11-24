@@ -1,3 +1,7 @@
+@import url(font-awesome.min.css);
+@import url(bootstrap.min.css);
+@import url(bootstrap.min.css);
+@import url(devicons.min.css);
 /********************************************\
 				$Colors
 \********************************************/
@@ -8,18 +12,6 @@ hta howa mazian
 /********************************************\
 				$fonts
 \********************************************/
-@font-face {
-  font-family: proximabold;
-  src: url(../fonts/proxima/ProximaNova-Bold-webfont.woff); }
-
-@font-face {
-  font-family: proximareg;
-  src: url(../fonts/proxima/ProximaNova-Reg-webfont.woff); }
-
-@font-face {
-  font-family: proximasembold;
-  src: url(../fonts/proxima/ProximaNova-Sbold-webfont.woff); }
-
 /* line 1, ../scss/base/_base.scss */
 ::selection {
   background-color: #0075a7;
@@ -35,40 +27,42 @@ hta howa mazian
   box-sizing: border-box; }
 
 /* line 8, ../scss/base/_base.scss */
-html {
+*, html {
   margin: 0;
   padding: 0; }
 
 /* line 12, ../scss/base/_base.scss */
+body, p, a, ul, li, span {
+  font-family: "PT Sans"; }
+
+/* line 13, ../scss/base/_base.scss */
 body {
   direction: ltr;
   margin: 0;
   padding: 0;
-  background-color: #FFF;
-  font-family: "PT Sans", "Kreon,Helvetica,sans-serif";
   background-color: #fafafa; }
 
-/* line 21, ../scss/base/_base.scss */
+/* line 20, ../scss/base/_base.scss */
 a {
   color: #a1e0fb; }
-  /* line 23, ../scss/base/_base.scss */
+  /* line 22, ../scss/base/_base.scss */
   a:visited {
     text-decoration: none;
     color: #a1e0fb; }
-  /* line 28, ../scss/base/_base.scss */
+  /* line 27, ../scss/base/_base.scss */
   a:hover {
     text-decoration: none;
     color: #444; }
-  /* line 33, ../scss/base/_base.scss */
+  /* line 32, ../scss/base/_base.scss */
   a:active {
     text-decoration: none;
     color: #a1e0fb; }
-  /* line 37, ../scss/base/_base.scss */
+  /* line 36, ../scss/base/_base.scss */
   a:focus {
     text-decoration: none;
     color: #a1e0fb; }
 
-/* line 47, ../scss/base/_base.scss */
+/* line 46, ../scss/base/_base.scss */
 input, textarea, button {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -76,28 +70,28 @@ input, textarea, button {
   -o-border-radius: 0px;
   border-radius: 0px; }
 
-/* line 50, ../scss/base/_base.scss */
+/* line 49, ../scss/base/_base.scss */
 label {
   padding-right: 2px; }
 
-/* line 53, ../scss/base/_base.scss */
+/* line 52, ../scss/base/_base.scss */
 textarea {
   resize: vertical; }
 
-/* line 54, ../scss/base/_base.scss */
+/* line 53, ../scss/base/_base.scss */
 p {
-  font-family: "PT Sans", "Kreon,Helvetica,sans-serif";
+  font-family: "PT Sans";
   margin: 0;
   padding: 0; }
 
-/* line 60, ../scss/base/_base.scss */
+/* line 59, ../scss/base/_base.scss */
 h1, h2, h3, h5, h6 {
-  font-family: "Kreon,Helvetica,sans-serif"; }
+  font-family: "PT Sans"; }
 
-/* line 63, ../scss/base/_base.scss */
+/* line 62, ../scss/base/_base.scss */
 textarea {
   font-size: 12px;
-  font-family: "PT Sans", "Kreon,Helvetica,sans-serif"; }
+  font-family: "PT Sans"; }
 
 /* line 13, ../scss/base/_reset.scss */
 html, body, div, span, applet, object, iframe,
@@ -152,31 +146,80 @@ table {
 h1, h2, h3, h4, h5 {
   margin-top: 0; }
 
-/* line 1, ../scss/layouts/_home.scss */
-.div01 {
-  margin: 80px 0;
-  padding: 20px 0; }
-  /* line 4, ../scss/layouts/_home.scss */
-  .div01 h2 {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 700;
-    font-family: "Kreon,Helvetica,sans-serif";
-    margin-bottom: 30px; }
-    /* line 6, ../scss/layouts/_home.scss */
-    .div01 h2 span:first-child {
-      color: #0075a7; }
-    /* line 7, ../scss/layouts/_home.scss */
-    .div01 h2 span:last-child {
-      color: #a1e0fb; }
-  /* line 13, ../scss/layouts/_home.scss */
-  .div01 p {
+/* line 3, ../scss/layouts/_section.scss */
+section h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "PT Sans";
+  margin-bottom: 50px;
+  color: #a1a1a1; }
+
+/* line 1, ../scss/layouts/_introduction.scss */
+section#introduction {
+  width: 100%;
+  min-height: 60vh;
+  padding: 12% 0; }
+  /* line 5, ../scss/layouts/_introduction.scss */
+  section#introduction p {
     margin: 0px 60px;
     text-align: center;
-    font-family: "PT Sans", "Kreon,Helvetica,sans-serif";
-    color: #7a7a7a;
+    font-family: "PT Sans";
+    color: #929292;
     font-size: 18px;
-    line-height: 22px; }
+    line-height: 26px; }
+
+/* line 1, ../scss/layouts/_competences.scss */
+section#competences {
+  width: 100%;
+  min-height: 100vh;
+  padding: 8% 0; }
+  /* line 5, ../scss/layouts/_competences.scss */
+  section#competences .col-sm-2 {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+  /* line 9, ../scss/layouts/_competences.scss */
+  section#competences .item {
+    display: block;
+    max-width: 265px;
+    height: 150px;
+    background-color: #fff;
+    margin: 2px;
+    border: 1px solid #dbdbdb;
+    font-family: "PT Sans"; }
+    /* line 18, ../scss/layouts/_competences.scss */
+    section#competences .item p {
+      margin-top: 10px;
+      font-family: "PT Sans";
+      font-weight: bold;
+      color: #6e6e6e; }
+    /* line 24, ../scss/layouts/_competences.scss */
+    section#competences .item span.state {
+      display: block;
+      margin-top: 2px; }
+      /* line 27, ../scss/layouts/_competences.scss */
+      section#competences .item span.state i {
+        font-size: 10px;
+        color: #ecc80a; }
+    /* line 32, ../scss/layouts/_competences.scss */
+    section#competences .item span:last-child {
+      display: block;
+      margin: 20px 0;
+      font-size: 65px; }
+
+/* line 1, ../scss/layouts/_projects.scss */
+section#projects {
+  width: 100%;
+  min-height: 100vh;
+  padding: 8% 0;
+  background-color: #ccc; }
+
+/* line 1, ../scss/layouts/_contact.scss */
+section#contact {
+  width: 100%;
+  min-height: 100vh;
+  padding: 8% 0;
+  background-color: #ddd; }
 
 /* line 1, ../scss/layouts/_footer.scss */
 .footer {
@@ -303,7 +346,7 @@ h1, h2, h3, h4, h5 {
         font-size: 18px;
         font-weight: bold;
         text-align: center;
-        font-family: "Kreon,Helvetica,sans-serif"; }
+        font-family: "PT Sans"; }
         /* line 81, ../scss/modules/_header.scss */
         .firstWrap .bottom .text h1 span {
           color: #a1e0fb; }
@@ -317,8 +360,9 @@ h1, h2, h3, h4, h5 {
 /* line 2, ../scss/modules/_navbar.scss */
 .ourNavbar .navbar-default {
   background-color: #fff;
-  border-bottom: 1px solid #dbdbdb; }
-/* line 6, ../scss/modules/_navbar.scss */
+  border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 0; }
+/* line 7, ../scss/modules/_navbar.scss */
 .ourNavbar .navbar-fixed-top {
   -webkit-box-shadow: 0px -7px 21px 0px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0px -7px 21px 0px rgba(0, 0, 0, 0.35);
@@ -331,41 +375,41 @@ h1, h2, h3, h4, h5 {
   -moz-transition-duration: 0.6s;
   -o-transition-duration: 0.6s;
   transition-duration: 0.6s; }
-/* line 11, ../scss/modules/_navbar.scss */
+/* line 12, ../scss/modules/_navbar.scss */
 .ourNavbar ul.navbar-nav li a {
   font-size: 14px;
-  font-family: "PT Sans", "Kreon,Helvetica,sans-serif";
+  font-family: "PT Sans";
   text-align: center;
   font-weight: 700;
   padding: 19px 0;
   margin: 0 15px;
   line-height: 0; }
-  /* line 20, ../scss/modules/_navbar.scss */
+  /* line 21, ../scss/modules/_navbar.scss */
   .ourNavbar ul.navbar-nav li a:hover {
     color: #0075a7; }
-/* line 24, ../scss/modules/_navbar.scss */
+/* line 25, ../scss/modules/_navbar.scss */
 .ourNavbar .navbar-default .navbar-nav > .active > a, .ourNavbar .navbar-default .navbar-nav > .active > a:focus, .ourNavbar .navbar-default .navbar-nav > .active > a:hover {
   border-bottom: 2px solid #a1e0fb;
   background-color: transparent; }
 
-/* line 30, ../scss/modules/_navbar.scss */
+/* line 31, ../scss/modules/_navbar.scss */
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
   vertical-align: top; }
 
-/* line 36, ../scss/modules/_navbar.scss */
+/* line 37, ../scss/modules/_navbar.scss */
 .navbar .navbar-collapse {
   text-align: center; }
 
-/* line 40, ../scss/modules/_navbar.scss */
+/* line 41, ../scss/modules/_navbar.scss */
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #0075a7; }
 
-/* line 43, ../scss/modules/_navbar.scss */
+/* line 44, ../scss/modules/_navbar.scss */
 .navbar-default .navbar-toggle {
   border: 0px; }
 
-/* line 47, ../scss/modules/_navbar.scss */
+/* line 48, ../scss/modules/_navbar.scss */
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
   background-color: transparent; }
