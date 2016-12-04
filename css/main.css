@@ -211,8 +211,20 @@ section#competences {
 section#projects {
   width: 100%;
   min-height: 100vh;
-  padding: 8% 0;
-  background-color: #ccc; }
+  padding: 8% 0; }
+  /* line 6, ../scss/layouts/_projects.scss */
+  section#projects .item {
+    display: block;
+    max-width: 265px;
+    height: 150px;
+    background-color: #fff;
+    margin: 2px;
+    padding: 2px;
+    border: 1px solid #dbdbdb; }
+    /* line 14, ../scss/layouts/_projects.scss */
+    section#projects .item img {
+      width: 100%;
+      max-width: 300px; }
 
 /* line 1, ../scss/layouts/_contact.scss */
 section#contact {
