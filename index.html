@@ -248,74 +248,58 @@
 		</div> <!-- Container -->
 		</section>
 
+		<!-- Projects Section  -->
+
 		<section id="projects" 	align="center">
 			<h2>My Last Projects</h2>
 			<div class="container">
 			<div class="row" align="center">
+
 				<div class="col-sm-4 col-md-3">
 					<div class="wrapThumb">
 						<div class="thumb">
-							<img width="225" height="135" src="imgs/works/thumbs/01.jpg" alt='hicham-rbib' />
-							<img width="225" height="135" src="imgs/works/thumbs/alt.png" class="alt" />
+							<a class="project1" href="imgs/works/full/projet-1/projet1.png" title="title project">
+								<img width="225" height="135" src="imgs/works/thumbs/alt.png" class="alt" />
+								<img width="225" height="135" src="imgs/works/thumbs/01.jpg" alt='hicham-rbib' />
+							</a>
 						</div>
 					</div>
 				</div>
+
 				<div class="col-sm-4 col-md-3">
 					<div class="wrapThumb">
 						<div class="thumb">
-							<img width="225" height="135" src="imgs/works/thumbs/01.jpg" alt='hicham-rbib' />
-							<img width="225" height="135" src="imgs/works/thumbs/alt.png" class="alt" />
+							<a class="project1" href="imgs/works/full/projet-1/projet1.png" title="title project">
+								<img width="225" height="135" src="imgs/works/thumbs/alt.png" class="alt" />
+								<img width="225" height="135" src="imgs/works/thumbs/01.jpg" alt='hicham-rbib' />
+							</a>
 						</div>
 					</div>
 				</div>
+
 				<div class="col-sm-4 col-md-3">
 					<div class="wrapThumb">
 						<div class="thumb">
-							<img width="225" height="135" src="imgs/works/thumbs/01.jpg" alt='hicham-rbib' />
-							<img width="225" height="135" src="imgs/works/thumbs/alt.png" class="alt" />
+							<a class="project1" href="imgs/works/full/projet-1/projet1.png" title="title project">
+								<img width="225" height="135" src="imgs/works/thumbs/alt.png" class="alt" />
+								<img width="225" height="135" src="imgs/works/thumbs/01.jpg" alt='hicham-rbib' />
+							</a>
 						</div>
 					</div>
 				</div>
+
 				<div class="col-sm-4 col-md-3">
 					<div class="wrapThumb">
 						<div class="thumb">
-							<img width="225" height="135" src="imgs/works/thumbs/01.jpg" alt='hicham-rbib' />
-							<img width="225" height="135" src="imgs/works/thumbs/alt.png" class="alt" />
+							<a class="project1" href="imgs/works/full/projet-1/projet1.png" title="title project">
+								<img width="225" height="135" src="imgs/works/thumbs/alt.png" class="alt" />
+								<img width="225" height="135" src="imgs/works/thumbs/01.jpg" alt='hicham-rbib' />
+							</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-4 col-md-3">
-					<div class="wrapThumb">
-						<div class="thumb">
-							<img width="225" height="135" src="imgs/works/thumbs/01.jpg" alt='hicham-rbib' />
-							<img width="225" height="135" src="imgs/works/thumbs/alt.png" class="alt" />
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4 col-md-3">
-					<div class="wrapThumb">
-						<div class="thumb">
-							<img width="225" height="135" src="imgs/works/thumbs/01.jpg" alt='hicham-rbib' />
-							<img width="225" height="135" src="imgs/works/thumbs/alt.png" class="alt" />
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4 col-md-3">
-					<div class="wrapThumb">
-						<div class="thumb">
-							<img width="225" height="135" src="imgs/works/thumbs/01.jpg" alt='hicham-rbib' />
-							<img width="225" height="135" src="imgs/works/thumbs/alt.png" class="alt" />
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4 col-md-3">
-					<div class="wrapThumb">
-						<div class="thumb">
-							<img width="225" height="135" src="imgs/works/thumbs/01.jpg" alt='hicham-rbib' />
-							<img width="225" height="135" src="imgs/works/thumbs/alt.png" class="alt" />
-						</div>
-					</div>
-				</div>
+				
+			</div>
 			</div>
 		</section>
 
@@ -336,10 +320,16 @@
 		<p class="done-by">Done by <a href="#">@Kritiqart</a></p>
 	</div>
 
-
 	</body>
 
 	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
+	<script>
+				$(document).ready(function(){
+					//Examples of how to assign the Colorbox event to elements
+					$(".project1").colorbox({transition:"elastic",speed:"100",width:"90%",scalePhotos: true,opacity: 0.86,top: true,retinaImage: true, returnFocus: true});
+				});
+			</script>
 </html>
